@@ -1,0 +1,502 @@
+{
+  "version": 2,
+  "www": "erdplus.com",
+  "shapes": [
+    {
+      "type": "Entity",
+      "details": {
+        "name": "meals",
+        "type": "regular",
+        "x": 140,
+        "y": 320,
+        "id": 1
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "id",
+        "x": 90,
+        "y": 210,
+        "isUnique": true,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 2
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "name",
+        "x": 210,
+        "y": 210,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 4
+      }
+    },
+    {
+      "type": "Entity",
+      "details": {
+        "name": "food_entries",
+        "type": "regular",
+        "x": 515,
+        "y": 320,
+        "id": 6
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "id",
+        "x": 340,
+        "y": 180,
+        "isUnique": true,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 7
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "dateTime",
+        "x": 460,
+        "y": 145,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 9
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "foodName",
+        "x": 580,
+        "y": 145,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 11
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "calories",
+        "x": 695,
+        "y": 180,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 13
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "servingSize",
+        "x": 345,
+        "y": 455,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 15
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "unit",
+        "x": 510,
+        "y": 490,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 17
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "meal_id",
+        "x": 680,
+        "y": 455,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 19
+      }
+    },
+    {
+      "type": "Entity",
+      "details": {
+        "name": "food_entries_tags",
+        "type": "regular",
+        "x": 920,
+        "y": 320,
+        "id": 21
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "id",
+        "x": 810,
+        "y": 170,
+        "isUnique": true,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 22
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "food_entry_id",
+        "x": 940,
+        "y": 155,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 24
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "tag_id",
+        "x": 1075,
+        "y": 185,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 26
+      }
+    },
+    {
+      "type": "Entity",
+      "details": {
+        "name": "tags",
+        "type": "regular",
+        "x": 1320,
+        "y": 320,
+        "id": 28
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "id",
+        "x": 1260,
+        "y": 210,
+        "isUnique": true,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 29
+      }
+    },
+    {
+      "type": "Attribute",
+      "details": {
+        "name": "name",
+        "x": 1380,
+        "y": 210,
+        "isUnique": false,
+        "isDerived": false,
+        "isMultivalued": false,
+        "isOptional": false,
+        "isComposite": false,
+        "id": 31
+      }
+    },
+    {
+      "type": "Relationship",
+      "details": {
+        "name": "classifies",
+        "isIdentifying": false,
+        "x": 320,
+        "y": 320,
+        "slots": [
+          {
+            "slotIndex": 0,
+            "entityId": 1,
+            "minimum": "",
+            "maximum": "",
+            "participation": "optional",
+            "cardinality": "many",
+            "role": ""
+          },
+          {
+            "slotIndex": 1,
+            "entityId": 6,
+            "minimum": "",
+            "maximum": "",
+            "participation": "mandatory",
+            "cardinality": "one",
+            "role": ""
+          }
+        ],
+        "id": 33
+      }
+    },
+    {
+      "type": "Relationship",
+      "details": {
+        "name": "has",
+        "isIdentifying": false,
+        "x": 715,
+        "y": 320,
+        "slots": [
+          {
+            "slotIndex": 0,
+            "entityId": 6,
+            "minimum": "",
+            "maximum": "",
+            "participation": "optional",
+            "cardinality": "many",
+            "role": ""
+          },
+          {
+            "slotIndex": 1,
+            "entityId": 21,
+            "minimum": "",
+            "maximum": "",
+            "participation": "mandatory",
+            "cardinality": "one",
+            "role": ""
+          }
+        ],
+        "id": 36
+      }
+    },
+    {
+      "type": "Relationship",
+      "details": {
+        "name": "labels",
+        "isIdentifying": false,
+        "x": 1125,
+        "y": 320,
+        "slots": [
+          {
+            "slotIndex": 0,
+            "entityId": 28,
+            "minimum": "",
+            "maximum": "",
+            "participation": "optional",
+            "cardinality": "many",
+            "role": ""
+          },
+          {
+            "slotIndex": 1,
+            "entityId": 21,
+            "minimum": "",
+            "maximum": "",
+            "participation": "mandatory",
+            "cardinality": "one",
+            "role": ""
+          }
+        ],
+        "id": 39
+      }
+    }
+  ],
+  "connectors": [
+    {
+      "type": "Connector",
+      "details": {
+        "id": 3
+      },
+      "source": 2,
+      "destination": 1
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 5
+      },
+      "source": 4,
+      "destination": 1
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 8
+      },
+      "source": 7,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 10
+      },
+      "source": 9,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 12
+      },
+      "source": 11,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 14
+      },
+      "source": 13,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 16
+      },
+      "source": 15,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 18
+      },
+      "source": 17,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 20
+      },
+      "source": 19,
+      "destination": 6
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 23
+      },
+      "source": 22,
+      "destination": 21
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 25
+      },
+      "source": 24,
+      "destination": 21
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 27
+      },
+      "source": 26,
+      "destination": 21
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 30
+      },
+      "source": 29,
+      "destination": 28
+    },
+    {
+      "type": "Connector",
+      "details": {
+        "id": 32
+      },
+      "source": 31,
+      "destination": 28
+    },
+    {
+      "type": "RelationshipConnector",
+      "details": {
+        "slotIndex": 0,
+        "id": 34
+      },
+      "source": 1,
+      "destination": 33
+    },
+    {
+      "type": "RelationshipConnector",
+      "details": {
+        "slotIndex": 1,
+        "id": 35
+      },
+      "source": 6,
+      "destination": 33
+    },
+    {
+      "type": "RelationshipConnector",
+      "details": {
+        "slotIndex": 0,
+        "id": 37
+      },
+      "source": 6,
+      "destination": 36
+    },
+    {
+      "type": "RelationshipConnector",
+      "details": {
+        "slotIndex": 1,
+        "id": 38
+      },
+      "source": 21,
+      "destination": 36
+    },
+    {
+      "type": "RelationshipConnector",
+      "details": {
+        "slotIndex": 0,
+        "id": 40
+      },
+      "source": 28,
+      "destination": 39
+    },
+    {
+      "type": "RelationshipConnector",
+      "details": {
+        "slotIndex": 1,
+        "id": 41
+      },
+      "source": 21,
+      "destination": 39
+    }
+  ],
+  "width": 1500,
+  "height": 620
+}
